@@ -27,3 +27,22 @@ What is the name of the function used to print a string?
 **Tutor:**
 
 Refused, off topic.
+
+---
+## 2026-10-27 17:17, in .
+
+**Me:** How can I use a loop and an if-else condition to check whether each number from 1 to N is odd or even?
+
+**Tutor:**
+
+Looping over a range and branching on remainder.
+```python
+def odd_or_even(n):
+    for i in range(1, n + 1):      # TODO: loop from 1 to n inclusive
+        if i % 2 == 0:             # TODO: test if i is even
+            print(f"{i} is even")
+        else:                      # TODO: handle the odd case
+            print(f"{i} is odd")
+```
+
+What is the operator that gives the remainder of a division?
