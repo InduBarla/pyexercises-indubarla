@@ -18,3 +18,12 @@ print(message)
 ```
 
 What is the name of the function used to print a string?
+
+---
+## 2026-10-27 13:46, in .
+
+**Me:** what is python
+
+**Tutor:**
+
+Refused, off topic.
