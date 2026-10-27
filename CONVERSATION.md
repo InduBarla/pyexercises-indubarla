@@ -96,3 +96,20 @@ Refused, off topic.
 **Tutor:**
 
 Refused, off topic.
+
+---
+## 2026-10-27 22:09, in .
+
+**Me:** How can I use a for loop to display each marketing campaign budget, its position in the list, and its percentage of the total budget?
+
+**Tutor:**
+
+Iterating over a list with index and percentage calculation.
+
+```python
+budgets = [1500, 2300, 800, 3200]  # toy data
+
+# TODO: write a for loop that prints each budget, its index, and its share of the total
+```
+
+What built-in function gives you both the index and the value while you loop?
