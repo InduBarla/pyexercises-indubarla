@@ -46,3 +46,35 @@ def odd_or_even(n):
 ```
 
 What is the operator that gives the remainder of a division?
+
+---
+## 2026-10-27 21:43, in .
+
+**Me:** How to create a list of at least eight marketing campaign budgets in Python, display the list and one item, sort it, and calculate the average budget?
+
+**Tutor:**
+
+Creating and working with a list of numbers.
+
+```python
+# TODO: create a list named budgets with at least eight numbers
+budgets = [5000, 3200, 7500, 1200, 9800, 4500, 6700, 2300]
+
+# TODO: display the whole list
+print(____)
+
+# TODO: display the first item
+print(____)
+
+# TODO: sort the list in place
+____
+
+# TODO: display the sorted list
+print(____)
+
+# TODO: calculate and display the average budget
+avg = sum(____) / len(____)
+print(____)
+```
+
+What function returns the length of a list?
