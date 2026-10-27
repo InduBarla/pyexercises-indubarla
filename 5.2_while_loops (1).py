@@ -28,10 +28,35 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My stop condition, my attempt limit, my summary:
+# 1. In:The user enters an answer until they get it right or run out of attempts.
+# 2. Process: A while loop checks the answer and counts each attempt.
+# 3. Out: A message showing whether the user succeeded and how many attempts they used.
+# 4. My stop condition, my attempt limit, my summary:The answer is "yes" (case-insensitive).3 tries success or failure and attempts used.
 
 
 # Your code below
+# Set the correct answer and maximum attempts
+correct_answer = "yes"
+maximum_attempts = 3
+attempts = 0
+success = False
+
+# Keep asking until the answer is correct or attempts run out
+while attempts < maximum_attempts and not success:
+    answer = input("Do you understand Python while loops? Answer: ")
+    attempts += 1
+
+    # Accept uppercase and extra spaces too
+    if answer.strip().lower() == correct_answer:
+        success = True
+        print("Correct! Well done.")
+    else:
+        print("That is not the expected answer. Try again.")
+
+# Display the final summary
+print("Attempts used:", attempts)
+
+if success:
+    print("Summary: You answered correctly.")
+else:
+    print("Summary: You reached the maximum number of attempts.")
