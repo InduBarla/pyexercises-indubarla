@@ -146,3 +146,12 @@ print(safe_avg(data))  # what does this print?
 ```
 
 Question: which built-in function gives the number of items in the list?
+
+---
+## 2026-11-17 13:02, in .
+
+**Me:** Why is it better in Python to break a calculation into multiple small functions that each do one job instead of putting everything inside a single large function, and how can one function call another?
+
+**Tutor:**
+
+Refused, off topic.
