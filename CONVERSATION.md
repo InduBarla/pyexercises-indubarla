@@ -122,3 +122,27 @@ What built-in function gives you both the index and the value while you loop?
 **Tutor:**
 
 Refused, off topic.
+
+---
+## 2026-11-17 12:52, in .
+
+**Me:** In Python, what is the difference between using `return` and `print` inside a function, and how should I handle an empty list `[]` when calculating an average so the program doesn't crash?
+
+**Tutor:**
+
+Concept: `return` sends a value back to the caller, `print` only shows it on screen.
+
+Pattern: computing an average safely
+```python
+def safe_avg(values):
+    if not values:  # handles empty list
+        return 0.0
+    total = sum(values)
+    return total / len(values)  # TODO: fix this line to compute the average
+
+# toy data
+data = [3, 5, 2]
+print(safe_avg(data))  # what does this print?
+```
+
+Question: which built-in function gives the number of items in the list?
