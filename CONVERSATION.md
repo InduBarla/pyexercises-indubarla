@@ -181,3 +181,27 @@ append_csv_row('toy.csv', ['beta', 8, 3.2])
 ```
 
 Which argument tells `open()` to append instead of overwrite?
+
+---
+## 2026-11-17 14:05, in .
+
+**Me:** In Python, how do I read a text file containing blank lines, leading spaces, and inconsistent capitalization, standardize each name into proper Title Case, and sort the list by last name (even when a last name has a prefix like `"van Rossum"`) before saving to a new file?
+
+**Tutor:**
+
+String capitalization and sorting by last name.
+
+```python
+def standardize_and_sort_names(input_path, output_path):
+    with open(input_path, 'r') as f:
+        raw = [line.strip() for line in f if line.strip()]
+    # TODO: turn each raw name into Title Case
+    cleaned = [name.title() for name in raw]
+    # TODO: split each name into parts and pick the last part as the sort key
+    # hint: use str.split() and the last element of the list
+    cleaned.sort(key=lambda n: n.split()[-1])
+    with open(output_path, 'w') as f:
+        f.write('\n'.join(cleaned))
+```
+
+What argument does the `key=` parameter of `list.sort()` receive?
