@@ -155,3 +155,29 @@ Question: which built-in function gives the number of items in the list?
 **Tutor:**
 
 Refused, off topic.
+
+---
+## 2026-11-17 13:36, in .
+
+**Me:** In Python, how do I append new rows to a CSV file without overwriting previous entries, and how do I make sure the header row is only written the very first time the file is created?
+
+**Tutor:**
+
+Writing new rows to a CSV file without overwriting is called **appending**.
+To keep the header only once, you open the file in **append mode** (`'a'`) after the first write.
+
+```python
+import csv
+
+def append_csv_row(filename, row):
+    """Append one row to a CSV file; write header only if the file is new."""
+    # TODO: decide whether to write the header
+    # TODO: open the file in append mode and write the row
+    pass
+
+# Toy example
+append_csv_row('toy.csv', ['alpha', 12, 4.5])
+append_csv_row('toy.csv', ['beta', 8, 3.2])
+```
+
+Which argument tells `open()` to append instead of overwrite?
