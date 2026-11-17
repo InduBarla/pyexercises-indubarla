@@ -205,3 +205,109 @@ def standardize_and_sort_names(input_path, output_path):
 ```
 
 What argument does the `key=` parameter of `list.sort()` receive?
+
+---
+## 2026-11-17 14:51, in .
+
+**Me:** How do I load the 33 scenarios from `scenarios_A.csv` using Python's built-in `csv` module so each option (`A`, `B`, `C`) is stored as a 4-item tuple `(text, budget_change, reputation_change, feedback)` with integer impacts?
+
+**Tutor:**
+
+Refused, off topic.
+
+---
+## 2026-11-17 14:51, in .
+
+**Me:** How can I make sure the game never crashes if the player enters lowercase letters, extra spaces, empty input, or invalid keys like `'D'` or numbers?
+
+**Tutor:**
+
+Refused, off topic.
+
+---
+## 2026-11-17 14:53, in .
+
+**Me:** How do I randomly pick 10 scenarios out of the 33 rows in `scenarios_A.csv` without repeating the same situation twice in one game?
+
+**Tutor:**
+
+Refused, off topic.
+
+---
+## 2026-11-17 14:54, in .
+
+**Me:** How do I read a CSV file in Python using the built-in `csv` module and convert number columns from strings into integers?
+
+**Tutor:**
+
+Reading a CSV with the csv module and converting columns to integers.
+
+```python
+import csv
+
+def load_and_convert(filename):
+    data = []
+    with open(filename, newline='') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            # TODO: convert the columns 'cost' and 'revenue' to integers
+            data.append(row)
+    return data
+```
+
+What two arguments does the built-in `open` need so that the csv reader can handle line endings correctly?
+
+---
+## 2026-11-17 14:54, in .
+
+**Me:** How do I keep asking a user for input in Python until they type A, B, or C (accepting both uppercase and lowercase)?
+
+**Tutor:**
+
+Looping until valid input.
+
+```python
+def ask_letter():
+    while True:
+        choice = input("Choose A, B or C: ").strip().upper()
+        # TODO: check if choice is in ['A','B','C']
+        # if not, continue the loop; otherwise break and return choice
+```
+
+Which built-in string method converts the input to uppercase before checking?
+
+---
+## 2026-11-17 14:54, in .
+
+**Me:** How do I keep a number from going above 100 in Python?
+
+**Tutor:**
+
+Capping a value at 100.
+
+```python
+def cap_at_100(value):
+    # TODO: return value if it is <= 100, otherwise return 100
+```
+
+What built-in function returns the smaller of two numbers?
+
+---
+## 2026-11-17 14:55, in .
+
+**Me:** How do I append a new row to a CSV file in Python without erasing the existing lines?
+
+**Tutor:**
+
+Appending a row to an existing CSV file.
+
+```python
+import csv
+
+def append_row(filename, new_row):
+    with open(filename, 'a', newline='') as f:
+        writer = csv.writer(f)
+        # TODO: write new_row to the file
+```
+
+Which mode must the file be opened in to append instead of overwrite?
